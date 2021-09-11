@@ -1,0 +1,296 @@
+body,html{
+	height: 100%;
+	margin: 0%;
+	font-family: 'Titillium Web',sans-serif;
+}
+/*** START REUSABLE COMPONENT ***/
+
+h1{
+	font-family: 'Titillium Web',sans-serif;
+}
+h2{
+	font-family: 'Titillium Web',sans-serif;
+}
+h4{
+	font-family: 'Titillium Web',sans-serif;
+}
+p{
+	font-family: 'Titillium Web',sans-serif;
+	font-size: 18px;
+}
+
+.topNavigationContainer{
+	padding: 0;
+	background: none;
+}
+a{
+	font-size: 18px;
+	transition: .5s;
+}
+a:hover{
+	color:red;
+}
+.linkClass{
+	color:#fff;
+}
+.dropdownLink{
+	font-size: 16px;
+}
+.dropdown-show .dropdown-toggle{
+	color: #fff !important;
+}
+span.navbar-brand {
+	color: #000 !important;
+	font-size: 22px;
+}
+
+.HomePageSection{
+    background: linear-gradient(rgba(135,80,156,.7),rgba(135,80,156,.2)),url(../image/bg1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+    overflow: hidden;
+	min-height: 800px;
+	height: 100%;
+    text-align: center;
+}
+.topSection{
+	background: rgb(22, 20, 20);
+	color: #fff;
+	padding: 20px;
+	text-align: left;
+}
+.bottomSection{
+	background:#fff;
+	color: #000;
+	padding:30px 30%;
+	margin-bottom: 100px;
+}
+/*** END REUSABLE COMPONENT ***/
+
+/*** START THUMBNAIL SECTION ***/
+.thumbnailSection{
+    background: linear-gradient(rgba(135,80,156,.7),rgba(135,80,156,.2)),url(../image/thumbnail.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+    overflow: hidden !important;
+	height: 60vh;
+    text-align: left;
+}
+.thumbnailSection .title{
+	margin-top: 30px;
+	color: #fff;
+	font-weight: 600;
+}
+.thumbnailSection .description{
+	margin-top: 30px;
+	color: #000;
+	font-weight: 500;
+}
+.thumbnailSection .formSection{
+	margin-top: 30px;
+}
+.thumbnailSection .searchForm{
+	background: none;
+	color: #000 !important;
+	font-size: 16px;
+}
+.thumbnailSection .searchForm:hover{
+	background: #b8b1ae;
+}
+/*** END THUMBNAIL SECTION ***/
+
+
+/*** START LATESTPOST SECTION ***/
+.LatestPostSection{
+	overflow: hidden;
+	text-align: left;
+	background: #fff;
+}
+.LatestPostSection .latestPost{
+	margin-top: 20px;
+	font-size: 20px;
+	text-transform: capitalize;
+	font-family: 'Titillium Web',sans-serif;
+	color: #000;
+	font-weight: 600;
+}
+.LatestPostSection .postFeaturedImg{
+	height: 100px;
+	width: 100px;
+}
+.LatestPostSection .postTitle{
+	font-size: 22px;
+	text-transform: capitalize;
+	color: #000;
+	font-weight: 600;
+}
+.LatestPostSection .postInfo{
+	font-size: 16px;
+	font-family: 'Titillium Web',sans-serif;
+	color: #000;
+	font-weight: 400;
+}
+/*** END LATESTPOST SECTION ***/
+
+/***  START SINGLE POST PAGE SECTION ***/
+.singlePostPage{
+	margin: auto 15%;
+}
+.singlePostPage .postDetails{
+	padding-bottom: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+.singlePostPage .singlePostBanner{
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #000;
+}
+.singlePostPage .postTitle{
+	text-align: left;
+}
+.singlePostPage .title{
+	color: #fff;
+	font-family: 'Titillium Web',sans-serif;
+}
+.singlePostPage .nextPost{
+	text-align: right;
+}
+.singlePostPage .singlePost{
+	background: #fff;
+	text-align: left;
+	overflow: hidden;
+}
+.singlePostPage .adminDetails{
+	padding: 10px;
+	font-family: 'Titillium Web',sans-serif;
+}
+.singlePostPage .postDescription{
+	padding: 20px;
+}
+.singlePostPage .adminDetails::before{
+	height: 100px;
+	width: 2px;
+	color: #000;
+	background: #000;
+	content: " ";
+	float: right;
+	padding-top: 0;
+}
+.singlePostPage .adminImg{
+	height: 150px;
+	width: 150px;
+}
+
+.singlePostPage .commentSection{
+	background: #fff;
+	text-align: left;
+	padding:0 !important;
+}
+.singlePostPage .commentSection .image{
+	height: 120px;
+	width: 120px;
+}
+.singlePostPage .commentSection .commentDetails{
+	padding: 15px;
+	padding-left: 30px;
+}
+.singlePostPage .commentSection .commentDescription{
+	padding:20px;
+}
+/*** END SINGLE POST PAGE SECTION ***/
+
+
+
+/*** START SIGN IN FORM ***/
+
+.middleContainer{
+	margin: auto 15%;
+}
+.signinFormSection{
+	text-align: left;
+	overflow: hidden;
+}
+
+.signinFormSection .signINHR{
+	background: #b8b1ae;
+}
+.signinLinkClass{
+	font-size: 18px;
+}
+
+/*** END SIGN IN FORM ***/
+
+
+/*** START USER PROFILE ***/
+
+.userProfileSection{
+	overflow: hidden;
+	text-align: left;
+	margin-bottom: 160px;
+}
+.userProfileSection .topSection{
+	color: #fff;
+	background: rgb(22, 20, 20);
+	padding: 20px;
+}
+.userProfileSection .bottomSectiom{
+	background: #fff;
+	padding: 25px;
+	color: #000;
+}
+.userProfileSection .userImg{
+	margin: 10px auto auto;
+	height: 150px;
+	width: 150px;
+}
+.userProfileSection .name{
+	margin-top: 5px;
+}
+
+/*** END USER PROFILE ***/
+
+/***  START ADD NEW SECTION ***/
+
+.addNewSection{
+	overflow: hidden;
+	text-align: left;
+	margin-bottom: 200px;
+}
+.addNewSection .topSection{
+	color: #fff;
+	background: rgb(22, 20, 20);
+	padding: 20px;
+}
+.addNewSection .addNewHR{
+	background: #b8b1ae;
+}
+.addNewSection .bottomSection{
+	background:#fff;
+	color: #000;
+	padding: 20px;
+}
+.addNewSection .formClass{
+	margin: auto 30%;
+}
+/*** END ADD NEW SECTION ***/
+
+/***  START RESGISTRATION SECTION ***/
+.registrationSection .bottomSection{
+	padding: 30px;
+	text-align: left;
+}
+
+/***  END RESGISTRATION SECTION ***/
+
+
+/*** TOP NAVIGATION CSS ***/
+a.d-block.nav-link.disabled {
+	color: #fff !important;
+}
+.dropdown-menu.show {
+	padding-left: 15px;
+}
