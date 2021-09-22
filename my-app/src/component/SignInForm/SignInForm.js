@@ -8,6 +8,12 @@ import {Link} from "react-router-dom";
 
 
 export default class SignInForm extends Component {
+    constructor(){
+        super()
+        this.state={
+            data:""
+        }
+    }
 
    /* SendContact(){
        let email=document.getElementById("email").value;
@@ -24,8 +30,24 @@ export default class SignInForm extends Component {
     onLogin=()=>{
         let name=document.getElementById("name").value;
         let password=document.getElementById("password").value;
+        let jsonObject={userName:name,password:password};
 
-        if(password=="codeshadow@2020"){
+        RestClient.PostRequest(AppUrl.OnLogin,JSON.stringify(jsonObject)).then(result=>{
+            this.setState({data:result});
+
+            if(this.state.data=="1"){
+                sessionStorage.setItem("userName",name);
+                window.location.reload();
+            }else{
+                document.getElementById("submit").innerHTML="Wrong Password!";
+                setTimeout(function(){
+                    document.getElementById("submit").innerHTML="Submit";
+                },2000)
+            }
+        }).catch(error=>{
+            alert("Error...");
+        })
+        /*if(password=="codeshadow@2020"){
             sessionStorage.setItem("userName",name);
             window.location.reload();
         }else{
@@ -33,7 +55,7 @@ export default class SignInForm extends Component {
             setTimeout(function(){
                 document.getElementById("submit").innerHTML="Submit";
             },2000)
-        }
+        }*/
     }
     /*login=()=>{
         sessionStorage.setItem("userName","Hasan");

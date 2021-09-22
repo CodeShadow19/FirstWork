@@ -20,7 +20,7 @@ export default class MyRoute extends Component {
                     <Route exact path="/adminProfile" component={AdminProfile} />
                     <Route exact path="/addNew" component={AddNew} />
                     <Route exact path="/signInPage" component={SignInPage} />
-                    <Route exact path="/singlePage" component={SinglePage} />
+                    <Route exact path="/singlePage/:id/:title" component={SinglePage} />
                     <Route exact path="/userProfile" component={UserProfile} />
                     <Route exact path="/allUsers" component={UserList} />
                     <Route exact path="/registration" component={Registration} />

@@ -18,7 +18,7 @@ export default class ThumbnailSection extends Component {
             setSearchTerm:""
         }
     }
-    /*componentDidMount() {
+    componentDidMount() {
         RestClient.GetRequest(AppUrl.HomeTop).then(result=>{
             if(result==null){
                 console.log("Errorr...");
@@ -29,15 +29,15 @@ export default class ThumbnailSection extends Component {
                 })
             }
         })
-        RestClient.GetRequest(AppUrl.HomePostData).then(result=>{
+        /*RestClient.GetRequest(AppUrl.HomePostData).then(result=>{
             if(result==null){
                 alert("Data Is Empty!");
             }else{
                 this.setState({myData:result})
             }
-        })
+        })*/
     }
-    onSearch(){
+    /*onSearch(){
         let post_title=document.getElementById('searchData').value;
         let jsonObject={post_title:post_title};
         RestClient.PostRequest(AppUrl.searchPost,JSON.stringify(jsonObject)).then(result=>{
@@ -56,8 +56,8 @@ export default class ThumbnailSection extends Component {
                     <Container className="thumbnailContainer">
                         <Row>
                             <Col sm={12} md={12} lg={6}>
-                                <h1 className="title">Learn,Collabarate,Share Knowldge</h1>
-                                <h4 className="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+                                <h1 className="title">{this.state.home_title}</h1>
+                                <h4 className="description">{this.state.home_description}</h4>
                                 <Form className="formSection" >
                                     <InputGroup className="mb-3">
                                         <FormControl

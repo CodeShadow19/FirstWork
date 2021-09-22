@@ -10,7 +10,7 @@ import RestClient from "../../RestApi/RestClient";
 import AppUrl from "../../RestApi/AppUrl";
 
 export default class LatestPostSection extends Component {
-    /*constructor(){
+    constructor(){
         super()
         this.state={
             myData:[]
@@ -24,9 +24,23 @@ export default class LatestPostSection extends Component {
                 this.setState({myData:result})
             }
         })
-    }*/
+    }
 
     render() {
+        const myList=this.state.myData;
+        const myView=myList.map(myList=>{
+            return <div>
+                <Row>
+                    <Col sm={2} md={2} lg={2}>
+                        <Link to="/singlePage"><img className="postFeaturedImg" src={myList.post_img} /></Link>
+                    </Col>
+                    <Col sm={10} md={10} lg={10}>
+                        <Link to={"/singlePage/"+myList.id+"/"+myList.post_title}><h4 className="postTitle">{myList.post_title}</h4></Link>
+                        <p className="postInfo">No Replies | Mr Demo in python on {myList.date_time}</p>
+                    </Col>
+                </Row><hr/>
+            </div>
+        })
         return (
             <Fragment>
                 <div className="middleContainer LatestPostSection">
@@ -36,51 +50,8 @@ export default class LatestPostSection extends Component {
                                 <h5 className="latestPost">Latest Post...</h5>
                             </Col>
                         </Row><hr/>
-                        <Row>
-                            <Col sm={2} md={2} lg={2}>
-                                <Link to="/singlePage"><img className="postFeaturedImg" src={Cplus} /></Link>
-                            </Col>
-                            <Col sm={10} md={10} lg={10}>
-                                <Link to="/singlePage"><h4 className="postTitle">What do you think about C++?</h4></Link>
-                                <p className="postInfo">No Replies | Mr Demo in python on 11/11/2011 on 8:25 PM</p>
-                            </Col>
-                        </Row><hr/>
-                        <Row>
-                            <Col sm={2} md={2} lg={2}>
-                                <Link to="/singlePage"><img className="postFeaturedImg" src={Csharp} /></Link>
-                            </Col>
-                            <Col sm={10} md={10} lg={10}>
-                                <Link to="/singlePage"><h4 className="postTitle">What do you think about C#?</h4></Link>
-                                <p className="postInfo">No Replies | Mr Demo in python on 11/11/2011 on 8:25 PM</p>
-                            </Col>
-                        </Row><hr/>
-                        <Row>
-                            <Col sm={2} md={2} lg={2}>
-                                <Link to="/singlePage"><img className="postFeaturedImg" src={Python} /></Link>
-                            </Col>
-                            <Col sm={10} md={10} lg={10}>
-                                <Link to="/singlePage"><h4 className="postTitle">What do you think about Python?</h4></Link>
-                                <p className="postInfo">No Replies | Mr Demo in python on 11/11/2011 on 8:25 PM</p>
-                            </Col>
-                        </Row><hr/>
-                        <Row>
-                            <Col sm={2} md={2} lg={2}>
-                                <Link to="/singlePage"><img className="postFeaturedImg" src={Dart} /></Link>
-                            </Col>
-                            <Col sm={10} md={10} lg={10}>
-                                <Link to="/singlePage"><h4 className="postTitle">What do you think about Dart?</h4></Link>
-                                <p className="postInfo">No Replies | Mr Demo in python on 11/11/2011 on 8:25 PM</p>
-                            </Col>
-                        </Row><hr/>
-                        <Row>
-                            <Col sm={2} md={2} lg={2}>
-                                <Link to="/singlePage"><img className="postFeaturedImg" src={Kotlin} /></Link>
-                            </Col>
-                            <Col sm={10} md={10} lg={10}>
-                                <Link to="/singlePage"><h4 className="postTitle">What do you think about Kotlin?</h4></Link>
-                                <p className="postInfo">No Replies | Mr Demo in python on 11/11/2011 on 8:25 PM</p>
-                            </Col>
-                        </Row><hr/>
+
+                        {myView}
                     </Container>
                 </div>
             </Fragment>

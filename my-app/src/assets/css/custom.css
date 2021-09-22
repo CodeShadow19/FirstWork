@@ -140,67 +140,95 @@ span.navbar-brand {
 	margin: auto 15%;
 }
 .singlePostPage .postDetails{
-	padding-bottom: 10px;
-    box-shadow: 5px 10px 18px #888888;
+    background: #fff;
+    text-align: left;
 }
-.singlePostPage .singlePostBanner{
-	overflow: hidden;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background: #000;
+.singlePostPage .singlePageRow{
+    padding: 15px;
 }
-.singlePostPage .postTitle{
-	text-align: left;
+.singlePostPage .postDetails .adminDetails .adminCard{
+    padding: 15px;
 }
-.singlePostPage .title{
-	color: #fff;
-	font-family: 'Titillium Web',sans-serif;
+.singlePostPage .postDetails .adminDetails .img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
 }
-.singlePostPage .nextPost{
-	text-align: right;
+.singlePostPage .postDetails .adminDetails .name{
+	font-size: 22px;
+	font-weight: 600;
 }
-.singlePostPage .singlePost{
-	background: #fff;
-	text-align: left;
-	overflow: hidden;
+.singlePostPage .postDetails .adminDetails .info{
+	color: #a7aa1a;
 }
-.singlePostPage .adminDetails{
-	padding: 10px;
-	font-family: 'Titillium Web',sans-serif;
+.singlePostPage .postDetails .postTitle{
+	margin-top: 30px;
 }
-.singlePostPage .postDescription{
-	padding: 20px;
+.singlePostPage .postDetails .postTitle .title{
+	font-size: 38px;
+	color: #000000;
+	font-weight: 600;
 }
-.singlePostPage .adminDetails::before{
-	height: 100px;
-	width: 2px;
-	color: #000;
-	background: #000;
-	content: " ";
-	float: right;
-	padding-top: 0;
+.singlePostPage .postDetails .descriptionPost .postDescription{
+	font-size: 18px;
+	font-weight: 600;
+	color: #000000;
 }
-.singlePostPage .adminImg{
-	height: 150px;
-	width: 150px;
+.singlePostPage .postDetails .descriptionPost .nextPost{
+
+}
+.singlePostPage .commentBox{
+    margin-right: 40%;
+}
+.singlePostPage .commentBox .textArea{
+    margin-bottom: 15px;
+}
+.singlePostPage .commentBox .submitBtn{
+    padding: 5px 20px;
+}
+.singlePostPage .commentRow{
+    margin: 10px auto;
+    padding: 20px;
+}
+.singlePostPage .commentRow .moreComment{
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+.singlePostPage .commentRow .commentCard .parentComment{
+	padding: 25px;
+}
+.singlePostPage .commentRow .commentCard .authorBio .img{
+    height: 80px;
+    width: 80px;
+}
+.singlePostPage .commentRow .commentCard li{
+    list-style: none;
+}
+.singlePostPage .commentRow .commentCard li .btn{
+    padding: 8px 18px;
+}
+.singlePostPage .commentRow .commentCard li .replyBtn{
+    margin-left: 30px;
+}
+.singlePostPage .commentRow .commentCard  .parentHR{
+	width: 100%;
+}
+.singlePostPage .childComment{
+	padding: 20px 15%;
+}
+.singlePostPage .replyCommentBox {
+	width: 100%;
+}
+.singlePostPage .replyCommentBox .commentBoxCol{
+	margin: 10px 10%;
+}
+.singlePostPage .replyCommentBox .commentBoxCol .textArea{
+	width: 60%;
+	margin-bottom: 10px;
 }
 
-.singlePostPage .commentSection{
-	background: #fff;
-	text-align: left;
-	padding:0 !important;
-}
-.singlePostPage .commentSection .image{
-	height: 120px;
-	width: 120px;
-}
-.singlePostPage .commentSection .commentDetails{
-	padding: 15px;
-	padding-left: 30px;
-}
-.singlePostPage .commentSection .commentDescription{
-	padding:20px;
-}
 /*** END SINGLE POST PAGE SECTION ***/
 
 
